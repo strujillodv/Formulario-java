@@ -15,11 +15,11 @@ public class Form {
      */
     public static void main(String[] args) {
         
-        Question q = new Question("Quien Eres");
-        q.anwer("Sergio Trujillo", true);
+        Data data = new Data();
         
-        System.out.println(q.getQuestion());
-        System.out.println(q.getAnswer(0));
+        FormTwo ventana = new FormTwo();
+        
+        ventana.setVisible(true);
     }
     
 }
