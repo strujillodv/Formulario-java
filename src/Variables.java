@@ -15,6 +15,7 @@ public class Variables {
     
     public static int positionX = 200;
     public static int positionY = 100;
+    public static User user;
     public static  ArrayList<Question> quest = new  ArrayList<Question>();
     
 }

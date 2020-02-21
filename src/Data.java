@@ -40,15 +40,6 @@ public class Data {
         Variables.quest.get(3).anwer("Cinco", false);
         Variables.quest.get(3).anwer("Uno", false);
         
-        Variables.quest.add(new Question("¿Cuál es el tamaño por defecto de un Canvas?"));
-        
-        Variables.quest.get(4).anwer("0x0", true);
-        Variables.quest.get(4).anwer("100x100", false);
-        Variables.quest.get(4).anwer("Siempre hay que asignarle un tamaño", false);
-        Variables.quest.get(4).anwer("300x150", false);
-        
-        Variables.quest.add(new Question("¿Cual de las siguientes líneas de código es la correcta en HTML5?"));
-        
         Variables.quest.get(5).anwer("<script type=\"text/javascript\" src=\"fichero.js\"></script>", true);
         Variables.quest.get(5).anwer("<script src=\"fichero.js\"></script>", false);
         Variables.quest.get(5).anwer("<script type=\"text/javascript1.5\" src=\"fichero.js\"></script>", false);
