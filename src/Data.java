@@ -54,6 +54,20 @@ public class Data {
         Variables.quest.get(5).anwer("<!DOCTYPE html>", false);
         Variables.quest.get(5).anwer("<!DOCTYPE html5>", true);
         
+        Variables.quest.add(new Question("¿Qué atributo nos sirve para definir estilos en línea?"));
+        
+        Variables.quest.get(6).anwer("css", false);
+        Variables.quest.get(6).anwer("font", false);
+        Variables.quest.get(6).anwer("script", false);
+        Variables.quest.get(6).anwer("style", true);
+        
+        Variables.quest.add(new Question("¿Qué atributo nos sirve para definir estilos en línea?"));
+        
+        Variables.quest.get(6).anwer("css", false);
+        Variables.quest.get(6).anwer("font", false);
+        Variables.quest.get(6).anwer("script", false);
+        Variables.quest.get(6).anwer("style", true);
+        
     }
     
 }

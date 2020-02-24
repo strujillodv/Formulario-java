@@ -8,7 +8,6 @@ import java.awt.Font;
 import java.awt.Image;
 import java.awt.Label;
 import java.awt.List;
-import java.awt.Panel;
 import java.awt.ScrollPane;
 import java.awt.event.ItemEvent;
 
@@ -45,9 +44,9 @@ public class FormTwo extends JFrame {
         Font titleFont = new Font("helvetica", Font.PLAIN, 24);
         title.setFont(titleFont);
         
-        Panel panel = new Panel();
+        JPanel panel = new JPanel();
         panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
-        //panel.setBorder(new EmptyBorder(20, 50, 20, 50));
+        panel.setBorder(new EmptyBorder(20, 50, 20, 50));
         
         JPanel acctions = new JPanel();
         acctions.setLayout(new FlowLayout());
