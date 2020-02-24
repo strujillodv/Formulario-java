@@ -8,8 +8,8 @@ import java.awt.Font;
 import java.awt.Image;
 import java.awt.Label;
 import java.awt.List;
+import java.awt.Panel;
 import java.awt.ScrollPane;
-import java.awt.TextField;
 import java.awt.event.ItemEvent;
 
 import javax.swing.BoxLayout;
@@ -30,7 +30,6 @@ import javax.swing.border.EmptyBorder;
  */
 public class FormTwo extends JFrame {
     
-    static TextField text, operacion;    
     static Label title, q1, q2, q3, q4, q5, q6, q7, q8, q9, q10;
     static Button next;
     static ScrollPane scroll;
@@ -46,9 +45,9 @@ public class FormTwo extends JFrame {
         Font titleFont = new Font("helvetica", Font.PLAIN, 24);
         title.setFont(titleFont);
         
-        JPanel panel = new JPanel();
+        Panel panel = new Panel();
         panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
-        panel.setBorder(new EmptyBorder(20, 20, 0, 10));
+        //panel.setBorder(new EmptyBorder(20, 50, 20, 50));
         
         JPanel acctions = new JPanel();
         acctions.setLayout(new FlowLayout());
@@ -65,13 +64,13 @@ public class FormTwo extends JFrame {
         q5.setFont(fuente);
         q6 = new Label(Variables.quest.get(5).getQuestion());
         q6.setFont(fuente);
-        q7 = new Label(Variables.quest.get(6).getQuestion());
+        q7 = new Label(Variables.quest.get(5).getQuestion());
         q7.setFont(fuente);
         q8 = new Label("");
         q9 = new Label("HTML5");
         q10 = new Label("HTML5");
         
-        
+        panel.add(title);
         panel.add(q1);
         
         CheckboxGroup cbg1=new CheckboxGroup ();
@@ -150,10 +149,10 @@ public class FormTwo extends JFrame {
         
         // RadioButton rd = new RadioButton();
         
-        panel.add(new Checkbox(Variables.quest.get(6).getAnswer(0), false));
-        panel.add(new Checkbox(Variables.quest.get(6).getAnswer(1), false));
-        panel.add(new Checkbox(Variables.quest.get(6).getAnswer(2), false));
-        panel.add(new Checkbox(Variables.quest.get(6).getAnswer(3), false));
+        panel.add(new Checkbox(Variables.quest.get(5).getAnswer(0), false));
+        panel.add(new Checkbox(Variables.quest.get(5).getAnswer(1), false));
+        panel.add(new Checkbox(Variables.quest.get(5).getAnswer(2), false));
+        panel.add(new Checkbox(Variables.quest.get(5).getAnswer(3), false));
         
         next = new Button("Siguiente");
         
@@ -164,9 +163,9 @@ public class FormTwo extends JFrame {
         ScrollPane scroll = new ScrollPane();
         
         scroll.add(panel);
-        scroll.setBounds(0,50,800,520);
+        scroll.setBounds(0,0,795,590);
         
-        add(title);
+        
         add(scroll);
         
         //Configuración del marco General

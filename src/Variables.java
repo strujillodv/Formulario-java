@@ -13,8 +13,9 @@ import java.util.ArrayList;
  */
 public class Variables {
     
-    public static int positionX = 200;
-    public static int positionY = 100;
+    public static int positionX = 350;
+    public static int positionY = 50;
+    public static String img = "/img/user.png";
     public static User user;
     public static  ArrayList<Question> quest = new  ArrayList<Question>();
     

@@ -29,8 +29,8 @@ public class Data {
         Variables.quest.add(new Question("¿Qué elemento utilizamos para insertar un vídeo en HTML5?"));
         
         Variables.quest.get(2).anwer("FILM", false);
-        Variables.quest.get(2).anwer("VIDEO", false);
-        Variables.quest.get(2).anwer("YOUTUBE", true);
+        Variables.quest.get(2).anwer("VIDEO", true);
+        Variables.quest.get(2).anwer("YOUTUBE", false);
         Variables.quest.get(2).anwer("SOURCE", false);
         
         Variables.quest.add(new Question("¿Cuántos Canvas puedo tener en una página web?"));
@@ -40,17 +40,19 @@ public class Data {
         Variables.quest.get(3).anwer("Cinco", false);
         Variables.quest.get(3).anwer("Uno", false);
         
-        Variables.quest.get(5).anwer("<script type=\"text/javascript\" src=\"fichero.js\"></script>", true);
-        Variables.quest.get(5).anwer("<script src=\"fichero.js\"></script>", false);
-        Variables.quest.get(5).anwer("<script type=\"text/javascript1.5\" src=\"fichero.js\"></script>", false);
-        Variables.quest.get(5).anwer("Las tres anteriores son correctas", false);
+        Variables.quest.add(new Question("¿Qué etiqueta es correcta en HTML5?"));
         
-        Variables.quest.add(new Question("Qué definición de DOCTYPE es la correcta para HTML5"));
+        Variables.quest.get(4).anwer("<script type=\"text/javascript\" src=\"fichero.js\"></script>", false);
+        Variables.quest.get(4).anwer("<script src=\"fichero.js\"></script>", false);
+        Variables.quest.get(4).anwer("<script type=\"text/javascript1.5\" src=\"fichero.js\"></script>", false);
+        Variables.quest.get(4).anwer("Las tres anteriores son correctas", true);
         
-        Variables.quest.get(6).anwer("<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 5 Transitional//EN\" \"http://www.w3.org/TR/html5/loose.dtd\">", true);
-        Variables.quest.get(6).anwer("<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 5 Strict//EN\" \"http://www.w3.org/TR/html5/strict.dtd\">", false);
-        Variables.quest.get(6).anwer("<!DOCTYPE html>", false);
-        Variables.quest.get(6).anwer("<!DOCTYPE html5>", false);
+        Variables.quest.add(new Question("¿Qué definición de DOCTYPE es la correcta para HTML5?"));
+        
+        Variables.quest.get(5).anwer("<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 5 Transitional//EN\" \"http://www.w3.org/TR/html5/loose.dtd\">", false);
+        Variables.quest.get(5).anwer("<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 5 Strict//EN\" \"http://www.w3.org/TR/html5/strict.dtd\">", false);
+        Variables.quest.get(5).anwer("<!DOCTYPE html>", false);
+        Variables.quest.get(5).anwer("<!DOCTYPE html5>", true);
         
     }
     

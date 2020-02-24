@@ -17,7 +17,7 @@ public class Form {
         
         Data data = new Data();
         
-        FormTwo ventana = new FormTwo();
+        FormOne ventana = new FormOne();
         
         ventana.setVisible(true);
     }
