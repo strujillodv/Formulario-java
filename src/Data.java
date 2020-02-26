@@ -61,12 +61,47 @@ public class Data {
         Variables.quest.get(6).anwer("script", false);
         Variables.quest.get(6).anwer("style", true);
         
-        Variables.quest.add(new Question("¿Qué atributo nos sirve para definir estilos en línea?"));
+        Variables.quest.add(new Question("¿Qué significa CSS?"));
         
-        Variables.quest.get(6).anwer("css", false);
-        Variables.quest.get(6).anwer("font", false);
-        Variables.quest.get(6).anwer("script", false);
-        Variables.quest.get(6).anwer("style", true);
+        Variables.quest.get(7).anwer("Computer Style Sheet", false);
+        Variables.quest.get(7).anwer("Concerned Style Sheet", false);
+        Variables.quest.get(7).anwer("Cascade Style Sheet", true);
+        Variables.quest.get(7).anwer("Colored Style Sheet", false);
+        
+        Variables.quest.add(new Question("¿Cómo puedo dar estilo al tamaño de fuente de todos los elementos H2 de una página?"));
+        
+        Variables.quest.get(8).anwer("h2 {font-size:20px;}", true);
+        Variables.quest.get(8).anwer("h2.all {font-size:20px;}", false);
+        Variables.quest.get(8).anwer("h2#all {font-size:20px;}", false);
+        Variables.quest.get(8).anwer("all#h2 {font-size:20px;}", false);
+        
+        Variables.quest.add(new Question("¿Como puedo resaltar el contenido de un párrafo?"));
+        
+        Variables.quest.get(9).anwer("p {font-weight:bold;}", false);
+        Variables.quest.get(9).anwer("p {font-color:#000;}", true);
+        Variables.quest.get(9).anwer("p {font:#000}", false);
+        Variables.quest.get(9).anwer("p {rgb:(0,0,0)}", false);
+        
+        Variables.quest.add(new Question("¿Qué propiedad sirve para cambiar el color de fondo?"));
+        
+        Variables.quest.get(10).anwer("bgcolor", false);
+        Variables.quest.get(10).anwer("color", false);
+        Variables.quest.get(10).anwer("background-color", true);
+        Variables.quest.get(10).anwer("Se puede cambiar con las tres", false);
+        
+        Variables.quest.add(new Question("¿En qué parte de la página se definen las hojas de estilos externas?"));
+        
+        Variables.quest.get(11).anwer("En el HEAD de la página", true);
+        Variables.quest.get(11).anwer("Justo después del elemento BODY", false);
+        Variables.quest.get(11).anwer("En cualquier parte de la página", false);
+        Variables.quest.get(11).anwer("Al final de la página", false);
+        
+        Variables.quest.add(new Question("¿Qué atributo CSS nos permite configurar el estilo del puntero del ratón?"));
+        
+        Variables.quest.get(12).anwer("cursor", true);
+        Variables.quest.get(12).anwer("pointer", false);
+        Variables.quest.get(12).anwer("icon", false);
+        Variables.quest.get(12).anwer("moise", false);
         
     }
     

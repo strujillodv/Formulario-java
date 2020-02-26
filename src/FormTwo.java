@@ -32,6 +32,8 @@ public class FormTwo extends JFrame {
     static Label title, q1, q2, q3, q4, q5, q6, q7, q8, q9, q10;
     static Button next;
     static ScrollPane scroll;
+    static Checkbox cb1, cb2,cb3,cb4;
+    private String cbText;
     
     public FormTwo() {
         
@@ -102,28 +104,40 @@ public class FormTwo extends JFrame {
         
         panel.add(q4);
         
-        Checkbox cb1 = new Checkbox(Variables.quest.get(3).getAnswer(0));
+        cb1 = new Checkbox(Variables.quest.get(3).getAnswer(0));
         
         cb1.addItemListener((ItemEvent e) -> {
-            cb1.setState(false);
-            if (e.getStateChange() == 1) {
-            }
-            System.out.println(e.getItem());
-            System.out.println(e.getClass());
-            System.out.println(e.getSource() == cb1);
-            System.out.println(e.getID());
-            System.out.println(e.getItemSelectable());
-            System.out.println(e.getStateChange());
-            System.out.println(e.paramString());
+            cb2.setState(false);
+            cb3.setState(false);
+            cb4.setState(false);
+            cbText = Variables.quest.get(3).getAnswer(0);
         });
         
-        Checkbox cb2 = new Checkbox(Variables.quest.get(3).getAnswer(1));
+        cb2 = new Checkbox(Variables.quest.get(3).getAnswer(1));
         
         cb2.addItemListener((ItemEvent e) -> {
-            System.out.println(e.getStateChange());
+            cb1.setState(false);
+            cb3.setState(false);
+            cb4.setState(false);
+            cbText = Variables.quest.get(3).getAnswer(0);
         });
-        Checkbox cb3 = new Checkbox(Variables.quest.get(3).getAnswer(2));
-        Checkbox cb4 = new Checkbox(Variables.quest.get(3).getAnswer(3));
+        cb3 = new Checkbox(Variables.quest.get(3).getAnswer(2));
+        
+        cb3.addItemListener((ItemEvent e) -> {
+            cb2.setState(false);
+            cb1.setState(false);
+            cb4.setState(false);
+            cbText = Variables.quest.get(3).getAnswer(0);
+        });
+        
+        cb4 = new Checkbox(Variables.quest.get(3).getAnswer(3));
+        
+        cb4.addItemListener((ItemEvent e) -> {
+            cb2.setState(false);
+            cb3.setState(false);
+            cb1.setState(false);
+            cbText = Variables.quest.get(3).getAnswer(0);
+        });
         
         panel.add(cb1);
         panel.add(cb2);
