@@ -18,5 +18,6 @@ public class Variables {
     public static String img = "/img/user.png";
     public static User user;
     public static  ArrayList<Question> quest = new  ArrayList<Question>();
+    public static  ArrayList<Question> ans = new  ArrayList<Question>();
     
 }

@@ -191,7 +191,7 @@ public class FormOne extends JFrame {
         add(scroll);
         
         //Configuración del marco General
-        Image icon = new ImageIcon(getClass().getResource("/img/icon.png")).getImage();
+        Image icon = new ImageIcon(getClass().getResource("/resource/icon.png")).getImage();
         setIconImage(icon);
         setLayout(null);
         setSize(500,600);

@@ -75,10 +75,10 @@ public class Data {
         Variables.quest.get(8).anwer("h2#all {font-size:20px;}", false);
         Variables.quest.get(8).anwer("all#h2 {font-size:20px;}", false);
         
-        Variables.quest.add(new Question("¿Como puedo resaltar el contenido de un párrafo?"));
+        Variables.quest.add(new Question("¿Como puedo cambiar el color del contenido de un párrafo?"));
         
         Variables.quest.get(9).anwer("p {font-weight:bold;}", false);
-        Variables.quest.get(9).anwer("p {font-color:#000;}", true);
+        Variables.quest.get(9).anwer("p {color: red;}", true);
         Variables.quest.get(9).anwer("p {font:#000}", false);
         Variables.quest.get(9).anwer("p {rgb:(0,0,0)}", false);
         
@@ -102,6 +102,50 @@ public class Data {
         Variables.quest.get(12).anwer("pointer", false);
         Variables.quest.get(12).anwer("icon", false);
         Variables.quest.get(12).anwer("moise", false);
+        
+        Variables.quest.add(new Question("<html>El papel de los programadores es esencial, sin una lista de instrucciones<br>  a seguir, la computadora es virtualmente inutil</html>"));
+        
+        Variables.quest.get(13).anwer("Verdadero", true);
+        Variables.quest.get(13).anwer("Falso", false);
+        
+        Variables.quest.add(new Question("La resolución de problemas de computadora tiene tres fases"));
+        
+        Variables.quest.get(14).anwer("Falso", false);
+        Variables.quest.get(14).anwer("Verdadero", true);
+        
+        
+        Variables.quest.add(new Question("¿Cuales son las fases para resolver problemas con computadoras?"));
+        
+        Variables.quest.get(15).anwer("Analisis del problema, diseño del algoritmo y resolución en la computadora ", true);
+        Variables.quest.get(15).anwer("Presiso, definido, finito y resultado en tiempo finito", false);
+        Variables.quest.get(15).anwer("Diagrama de flujo, Diagrama N-S y Pseudocodigo", false);
+        
+        Variables.quest.add(new Question("<html>Es un metodo  para resolver  un problema mediante  <br>una serie de pasos precisos, definidos y finitos, corresponde a:<html>"));
+        
+        Variables.quest.get(16).anwer("Programa", false);
+        Variables.quest.get(16).anwer("Algoritmo", true);
+        Variables.quest.get(16).anwer("Ninguno", false);
+        
+        Variables.quest.add(new Question("AL ejecutar un programa se pueden producir tres tipos de errores, los cuales son:"));
+        
+        Variables.quest.get(17).anwer("Error de compilacion, ejecución y lógico", true);
+        Variables.quest.get(17).anwer("Ninguna opción", false);
+        Variables.quest.get(17).anwer("Diagrama de flujo, Diagrama N-S y Pseudocodigo", false);
+        
+        
+        Variables.quest.add(new Question("Se considera que el primer lenguaje de alto nivel y fue nombrado"));
+        
+        Variables.quest.get(18).anwer("ADA", false);
+        Variables.quest.get(18).anwer("C", false);
+        Variables.quest.get(18).anwer("FORTAN", true);
+        Variables.quest.get(18).anwer("JAVA", false);
+        
+        Variables.quest.add(new Question("int, char, float, string y boolean son:"));
+        
+        Variables.quest.get(19).anwer("Funciones de acceso a datos", false);
+        Variables.quest.get(19).anwer("Instrucciones de acceso a datos", false);
+        Variables.quest.get(19).anwer("Tipos de datos", true);
+        Variables.quest.get(19).anwer("Sentencias de control", false);
         
     }
     
